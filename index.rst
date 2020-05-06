@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to REES46 Guides's documentation!
+Обучающий портал REES46
 =========================================
 
 .. toctree::
@@ -12,7 +12,7 @@ Welcome to REES46 Guides's documentation!
 
 
 
-Indices and tables
+Оглавление
 ==================
 
 * :ref:`genindex`
