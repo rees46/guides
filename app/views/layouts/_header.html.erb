@@ -1,0 +1,16 @@
+<div class="bg-success mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 offset-lg-2 text-white align-middle py-5">
+        <div class="font-weight-bold">REES46</div>
+        <% if breadcrumbs %>
+          <% breadcrumbs.each do |row| %>
+            <%= link_to row[1], row[0], class: 'text-white align-self-center' %>
+            &rarr;
+          <% end %>
+        <% end %>
+        <%= title %>
+      </div>
+    </div>
+  </div>
+</div>

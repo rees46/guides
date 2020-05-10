@@ -3,6 +3,10 @@ Rails.application.routes.draw do
 
   namespace :ru do
     get '/', to: 'index#index'
+    get '/overview', to: 'index#overview'
+    get '/dashboard', to: 'index#dashboard'
+    get '/integration', to: 'index#integration'
+    get '/cms', to: 'index#cms'
   end
 
   root to:'home#index'

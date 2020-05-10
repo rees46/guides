@@ -1,13 +1,4 @@
-<div class="bg-success mb-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 offset-lg-2 py-5 text-white">
-        <div class="font-weight-bold">REES46</div>
-        <div>Обучающий портал</div>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render partial: 'layouts/header', locals: {title: 'Обучающий портал', breadcrumbs: []} %>
 
 
 <div class="container">
@@ -16,16 +7,20 @@
 
       <h2 class="mb-3 font-weight-bold">Начало работы</h2>
       <div class="mb-3">
-        <div class="font-weight-bold mb-0"><a href="#">Что такое REES46?</a></div>
+        <div class="font-weight-bold mb-0"><%= link_to 'Что такое REES46?', ru_overview_path %></div>
         <div>Краткий обзор возможностей платформы и чего от нее ожидать.</div>
       </div>
       <div class="mb-3">
-        <div class="font-weight-bold mb-0"><a href="#">Панель управления</a></div>
+        <div class="font-weight-bold mb-0"><%= link_to 'Панель управления', ru_dashboard_path %></div>
         <div>Как пользоваться дашбордом, биллингом и настройками.</div>
       </div>
       <div class="mb-3">
-        <div class="font-weight-bold mb-0"><a href="#">Подключение</a></div>
-        <div>Как подключить интернет-магазин к REES46.</div>
+        <div class="font-weight-bold mb-0"><%= link_to 'Подключение вручную', ru_integration_path %></div>
+        <div>Как подключить интернет-магазин к REES46 вручную.</div>
+      </div>
+      <div class="mb-3">
+        <div class="font-weight-bold mb-0"><%= link_to 'Подключение плагина', ru_cms_path %></div>
+        <div>Как подключить интернет-магазин к REES46 с помощью плагина к CMS.</div>
       </div>
 
       <hr>
