@@ -1,91 +1,20 @@
 <%= render partial: 'layouts/header', locals: {title: 'Обучающий портал', breadcrumbs: []} %>
 
-
 <div class="container">
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2">
-
-      <h2 class="mb-3 font-weight-bold">Начало работы</h2>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><%= link_to 'Что такое REES46?', ru_overview_path %></div>
-        <div>Краткий обзор возможностей платформы и чего от нее ожидать.</div>
-      </div>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><%= link_to 'Панель управления', ru_dashboard_path %></div>
-        <div>Как пользоваться дашбордом, биллингом и настройками.</div>
-      </div>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><%= link_to 'Подключение вручную', ru_integration_path %></div>
-        <div>Как подключить интернет-магазин к REES46 вручную.</div>
-      </div>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><%= link_to 'Подключение плагина', ru_cms_path %></div>
-        <div>Как подключить интернет-магазин к REES46 с помощью плагина к CMS.</div>
-      </div>
-
-      <hr>
-
-      <h2 class="mb-3 font-weight-bold">Товарные рекомендации</h2>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><a href="#">Основы работы с товарными рекомендациями</a></div>
-        <div>Обзор инструмента, назначение и оценка результатов</div>
-      </div>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><a href="#">Расширенные возможности товарных рекомендаций</a></div>
-        <div>Собственные шаблоны рекомендаций, A/B-тестирование, создание собственных блоков</div>
-      </div>
-      <hr>
-
-      <h2 class="mb-3 font-weight-bold">Поиск для интернет-магазина</h2>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><a href="#">Что такое REES46?</a></div>
-        <div>Краткий обзор возможностей платформы и чего от нее ожидать.</div>
-      </div>
-      <hr>
-
-      <h2 class="mb-3 font-weight-bold">E-mail рассылки</h2>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><a href="#">Что такое REES46?</a></div>
-        <div>Краткий обзор возможностей платформы и чего от нее ожидать.</div>
-      </div>
-      <hr>
-
-      <h2 class="mb-3 font-weight-bold">Web push рассылки</h2>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><a href="#">Что такое REES46?</a></div>
-        <div>Краткий обзор возможностей платформы и чего от нее ожидать.</div>
-      </div>
-      <hr>
-
-      <h2 class="mb-3 font-weight-bold">Триггерные цепочки</h2>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><a href="#">Что такое REES46?</a></div>
-        <div>Краткий обзор возможностей платформы и чего от нее ожидать.</div>
-      </div>
-      <hr>
-
-      <h2 class="mb-3 font-weight-bold">Отзывы</h2>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><a href="#">Что такое REES46?</a></div>
-        <div>Краткий обзор возможностей платформы и чего от нее ожидать.</div>
-      </div>
-      <hr>
-
-      <h2 class="mb-3 font-weight-bold">Аудитория и сегментация</h2>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><a href="#">Что такое REES46?</a></div>
-        <div>Краткий обзор возможностей платформы и чего от нее ожидать.</div>
-      </div>
-      <hr>
-
-      <h2 class="mb-3 font-weight-bold">Служебные задачи</h2>
-      <div class="mb-3">
-        <div class="font-weight-bold mb-0"><a href="#">Сотрудники</a></div>
-        <div>Краткий обзор возможностей платформы и чего от нее ожидать.</div>
-      </div>
-      <hr>
-
-
-    </div>
-  </div>
+  <%= render 'ru/index/index.overview' %>
+  <%= render 'ru/index/index.connect' %>
+  <%= render 'ru/index/index.reports' %>
+  <%= render 'ru/index/index.recommendations' %>
+  <%= render 'ru/index/index.search' %>
+  <%= render 'ru/index/index.popup' %>
+  <%= render 'ru/index/index.audience' %>
+  <%= render 'ru/index/index.bulk_email' %>
+  <%= render 'ru/index/index.bulk_webpush' %>
+  <%= render 'ru/index/index.bulk_mobile_push' %>
+  <%= render 'ru/index/index.drip' %>
+  <%= render 'ru/index/index.transactional' %>
+  <%= render 'ru/index/index.settings' %>
+  <%= render 'ru/index/index.billing' %>
+  <%= render 'ru/index/index.reviews' %>
 </div>
+
