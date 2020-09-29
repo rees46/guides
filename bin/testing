@@ -1,0 +1,18 @@
+#!/bin/bash
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+ruby_version=`cat Gemfile|grep ^ruby|awk '{print $2}'|sed "s/'//g"`
+rvm use $ruby_version
+ruby -v
+bundle -v
+
+cp config/database.yml.example config/database.yml
+
+export RAILS_ENV=test
+
+#bundle exec rake db:reset
+#bundle exec rake db:seed
+
+#bundle exec rspec
+#bundle exec rails test
