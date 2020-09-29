@@ -13,5 +13,3 @@ bundle -v
 
 bundle install
 
-yarn
-
