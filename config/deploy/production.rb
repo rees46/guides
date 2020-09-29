@@ -1,6 +1,6 @@
-role :app, %w{148.251.233.13}
-role :web, %w{148.251.233.13}
-role :db,  %w{148.251.233.13}
+role :app, %w{176.9.145.71}
+role :web, %w{176.9.145.71}
+role :db,  %w{176.9.145.71}
 
 set :stage, :production
 
@@ -12,7 +12,7 @@ set :ssh_options, {
     port: 21212
 }
 
-set :application, 'guides'
+set :application, 'guides.rees46.com'
 set :deploy_to, "/home/guides/#{fetch(:application)}"
 set :branch, 'master'
 set :rails_env, 'production'
